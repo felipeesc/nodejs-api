@@ -1,4 +1,4 @@
-const sequelize = require('../services/sequelize')
+const sequelize = require('../server/service/sequelize')
 
 const Usuarios = sequelize.define('usuarios', {
     nome: {

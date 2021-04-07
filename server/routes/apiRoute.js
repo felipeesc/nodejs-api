@@ -8,21 +8,21 @@ const path = require('path');
 //     res.json(posts);
 // });
 
-router.get('/', async function (req, res){
-   res.sendFile(path.resolve("server/index.html"));
+router.get('/', async (req, res) => {
+    res.sendFile(path.resolve("server/index.html"));
 });
-router.post('/search/:nick', async function (req, res){
+router.post('/search/:nick', async (req, res) => {
     const {nick} = req.params;
     const posts = await apiService.getApi(nick);
 });
 
-router.post('/posts', async function (req, res){
+router.post('/posts', async (req, res) => {
 
 });
-router.put('/posts/id', async function (req, res){
+router.put('/posts/id', async (req, res) => {
 
 });
-router.delete('/posts/id', async function (req, res){
+router.delete('/posts/id', async (req, res) => {
 
 });
 

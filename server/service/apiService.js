@@ -1,6 +1,6 @@
 const apiData = require('../data/apiData');
 
-exports.getApi = function () {
+exports.getApi = () => {
     return apiData.get(":nick", async (req, res) => {
         const {nick} = req.params;
         try {
